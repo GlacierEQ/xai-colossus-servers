@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RackState",
+  "description": "Schema for a single rack's state snapshot — consumed by cooling and energy repos",
+  "type": "object",
+  "required": ["rack_id", "zone", "timestamp", "power_watts", "gpu_count", "status"],
+  "properties": {
+    "rack_id": { "type": "string", "example": "RACK-A01" },
+    "zone": { "type": "string", "example": "ZONE-A" },
+    "timestamp": { "type": "string", "format": "date-time" },
+    "power_watts": { "type": "integer", "minimum": 0 },
+    "gpu_count": { "type": "integer", "minimum": 0, "maximum": 42 },
+    "cooling_circuit": { "type": "string" },
+    "status": { "type": "string", "enum": ["active", "offline", "maintenance", "degraded"] },
+    "firmware_version": { "type": "string" },
+    "alerts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "code": { "type": "string" },
+          "severity": { "type": "string", "enum": ["info", "warn", "critical"] },
+          "message": { "type": "string" }
+        }
+      }
+    }
+  }
+}
