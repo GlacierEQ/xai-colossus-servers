@@ -1,0 +1,14 @@
+{
+  "rack_id": "RACK-D01",
+  "zone": "ZONE-D",
+  "slots": [
+    {"id": 0, "gpu_model": "H200 SXM5", "tdp_w": 700, "status": "active"},
+    {"id": 1, "gpu_model": "H200 SXM5", "tdp_w": 700, "status": "failed"},
+    {"id": 2, "gpu_model": "H200 SXM5", "tdp_w": 700, "status": "active"},
+    {"id": 3, "gpu_model": "H200 SXM5", "tdp_w": 700, "status": "active"},
+    {"id": 4, "gpu_model": "H200 SXM5", "tdp_w": 700, "status": "active"},
+    {"id": 5, "gpu_model": "H200 SXM5", "tdp_w": 700, "status": "active"},
+    {"id": 6, "gpu_model": "H200 SXM5", "tdp_w": 700, "status": "active"},
+    {"id": 7, "gpu_model": "H200 SXM5", "tdp_w": 700, "status": "active"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "rack_id": "RACK-TEMPLATE",
+  "zone": "ZONE-A",
+  "slots": [
+    {
+      "id": 0,
+      "gpu_model": "H100 SXM5 80GB",
+      "tdp_w": 700,
+      "status": "active"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "rack_id": "RACK-C01",
+  "zone": "ZONE-C",
+  "slots": [
+    {"id": 0, "gpu_model": "H100 SXM5 80GB", "tdp_w": 700, "status": "maintenance"},
+    {"id": 1, "gpu_model": "H100 SXM5 80GB", "tdp_w": 700, "status": "active"},
+    {"id": 2, "gpu_model": "H100 SXM5 80GB", "tdp_w": 700, "status": "active"},
+    {"id": 3, "gpu_model": "H100 SXM5 80GB", "tdp_w": 700, "status": "active"},
+    {"id": 4, "gpu_model": "H100 SXM5 80GB", "tdp_w": 700, "status": "active"},
+    {"id": 5, "gpu_model": "H100 SXM5 80GB", "tdp_w": 700, "status": "active"},
+    {"id": 6, "gpu_model": "H100 SXM5 80GB", "tdp_w": 700, "status": "active"},
+    {"id": 7, "gpu_model": "H100 SXM5 80GB", "tdp_w": 700, "status": "active"}
+  ]
+}

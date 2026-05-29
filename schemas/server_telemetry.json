@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Server Telemetry Feed",
+  "type": "object",
+  "required": ["rack_id", "gpu_temps", "power_draw_w", "timestamp"],
+  "properties": {
+    "rack_id": {"type": "string"},
+    "gpu_temps": {
+      "type": "array",
+      "items": {"type": "number"}
+    },
+    "power_draw_w": {"type": "number"},
+    "timestamp": {"type": "string", "format": "date-time"}
+  }
+}

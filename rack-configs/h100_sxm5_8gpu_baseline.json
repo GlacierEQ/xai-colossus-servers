@@ -1,0 +1,25 @@
+{
+  "node_type": "H100 SXM5 8-GPU",
+  "gpu_count": 8,
+  "gpu_model": "H100 SXM5 80GB",
+  "nvlink_topology": "Fully connected via NVSwitch",
+  "nvswitch_count": 4,
+  "power": {
+    "tdp_per_gpu_w": 700,
+    "total_rack_draw_kw": 5.6,
+    "pdu_amperage": 60
+  },
+  "cooling": {
+    "inlet_temp_target_c": 22,
+    "airflow_cfm": 1800,
+    "rear_door_heat_exchanger": "Required"
+  },
+  "networking": {
+    "ib_ports": "8x 400Gb HDR",
+    "ethernet_mgmt_port": "1x 10GbE"
+  },
+  "memory": {
+    "hbm3_per_gpu_gb": 80,
+    "system_dram_gb": 2048
+  }
+}
