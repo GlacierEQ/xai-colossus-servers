@@ -1,0 +1,45 @@
+{
+  "schema": "glaciereq.operability-receipt.v1",
+  "repository": "GlacierEQ/xai-colossus-servers",
+  "at": "2026-08-10T04:12Z",
+  "source_sha": "1c4a666a8383bae29268ffa8a4e1b0f8797f61d8fef2aa9a860dc954a98a0fb7",
+  "entry": "scripts/operate.py",
+  "primary_output": {
+    "module": "rack_planner",
+    "ok": true,
+    "repository": "GlacierEQ/xai-colossus-servers",
+    "smoke": {
+      "args": [
+        "[Node(id='sample_id', kw=1.0, rack_pref=",
+        "[Rack(id='sample_id', kw_cap=1.0, used=0"
+      ],
+      "content_checked": true,
+      "invoked": true,
+      "kind": "fn",
+      "name": "place",
+      "result": {
+        "algorithm": "first_fit_decreasing_with_preference",
+        "ok": true,
+        "plan": [
+          {
+            "kw": 1.0,
+            "node": "sample_id",
+            "preference_honored": false,
+            "rack": "sample_id",
+            "reason": "first_feasible_rack"
+          }
+        ],
+        "rack_usage": {
+          "sample_id": {
+            "capacity_kw": 1.0,
+            "headroom_kw": 0.0,
+            "used_kw": 1.0
+          }
+        },
+        "unplaced": []
+      }
+    }
+  },
+  "dual_run_ok": true,
+  "result": "PASS"
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "glaciereq.promotion-authority-grant.v1",
+  "repository": "GlacierEQ/xai-colossus-servers",
+  "source_sha": "1c4a666a8383bae29268ffa8a4e1b0f8797f61d8fef2aa9a860dc954a98a0fb7",
+  "proof_receipt_digest": "bf8d2806cde20d91f7f68be737770942149434f34a6f1d4bc2ee7862f8849fca",
+  "not_after": 1788927149.234226,
+  "mac": "bbe3b6c94af54a1f255d743499ac0e74e47d3e0f3866b8ba46d8476648c2e5b6",
+  "issuer": "local_operator_promotion_authority",
+  "verified": true,
+  "secret_ref": "src/promotion_authority.py::LOCAL_OPERATOR_SECRET"
+}
