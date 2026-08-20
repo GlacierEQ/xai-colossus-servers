@@ -8,11 +8,17 @@ does not run NCCL or touch a live fabric.
 
 from __future__ import annotations
 
+import sys
 from dataclasses import dataclass, field
 from math import isfinite
+from pathlib import Path
 from typing import Any
 
-from src.rack_planner import Node, PlacementResult, Rack, place
+_PLANNER_SOURCE_ROOT = Path(__file__).resolve().parents[1] / "src"
+if str(_PLANNER_SOURCE_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PLANNER_SOURCE_ROOT))
+
+from rack_planner import Node, PlacementResult, Rack, place
 
 
 class ServerAdapterInputError(ValueError):
